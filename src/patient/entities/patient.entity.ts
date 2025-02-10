@@ -9,29 +9,29 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('patient_master')
 export class Patient {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
  
   @Column()
-  name: string;
+  name!: string;
 
   @Column({ unique: true })
-  email: string;
+  email!: string;
 
   @Column()
-  mobile: string;
+  mobile!: string;
 
   @Column()
-  city: string;
+  city!: string;
 
   @Column()
-  state: string;
+  state!: string;
 
   @Column()
-  dob: string;
+  dob!: string;
 
   @Column()
-  sex: string;
+  sex!: string;
 
   @Column()
-  password: string;
+  password!: string;
 }

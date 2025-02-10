@@ -2,45 +2,45 @@ import { IsEmail, IsString, MinLength, IsNumber } from 'class-validator';
 
 export class CreateDoctorDto {
   @IsEmail()
-  email_id: string;
+  email_id!: string;
 
   @IsString()
   @MinLength(6)
-  password: string;
+  password!: string;
 
   @IsString()
-  first_name: string;
+  first_name!: string;
 
   @IsString()
-  last_name: string;
+  last_name!: string;
 
   @IsString()
-  mobile_no: string;
+  mobile_no!: string;
 
   @IsString()
-  city: string;
+  city!: string;
 
   @IsString()
-  state: string;
+  state!: string;
 
   @IsString()
-  address: string;
+  address!: string;
 
   @IsString()
-  license_registration_no: string;
+  license_registration_no!: string;
 
   @IsString()
-  qualification: string;
+  qualification!: string;
 
   @IsString()
-  collage_name: string;
+  collage_name!: string;
 
   @IsNumber()
-  course_year: number;
+  course_year!: number;
 
   @IsString()
-  abhaid: string;
+  abhaid!: string;
 
   @IsNumber()
-  user_type_id: number;
+  user_type_id!: number;
 }

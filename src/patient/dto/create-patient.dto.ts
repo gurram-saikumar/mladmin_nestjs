@@ -7,27 +7,27 @@ import { IsEmail, IsString, IsPhoneNumber, MinLength } from 'class-validator';
 
 export class CreatePatientDto {
   @IsPhoneNumber(undefined)
-  mobile: string;
+  mobile!: string;
 
   @IsString()
   @MinLength(6)
-  password: string;
+  password!: string;
 
   @IsString()
-  name: string;
+  name!: string;
 
   @IsString()
-  city: string;
+  city!: string;
 
   @IsString()
-  state: string;
+  state!: string;
 
   @IsString()
-  dob: string;
+  dob!: string;
 
   @IsString()
-  sex: string;
+  sex!: string;
 
   @IsEmail()
-  email: string;
+  email!: string;
 }

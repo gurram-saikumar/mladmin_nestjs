@@ -11,53 +11,53 @@ import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 @Entity('user_master')
 export class Doctor {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
 
   @Column()
-  company_id: string;
+  company_id!: string;
 
   @Column()
-  email_id: string;
+  email_id!: string;
 
   @Column()
-  password: string;  // This will store the hashed password
+  password!: string;  // This will store the hashed password
 
   @Column()
-  abhaid: string;
+  abhaid!: string;
 
   @Column()
-  first_name: string;
+  first_name!: string;
 
   @Column()
-  last_name: string;
+  last_name!: string;
 
   @Column()
-  gender: string;
+  gender!: string;
 
   @Column()
-  mobile_no: string;
+  mobile_no!: string;
 
   @Column()
-  city: string;
+  city!: string;
 
   @Column()
-  address: string;
+  address!: string;
 
   @Column()
-  state: string;
+  state!: string;
 
   @Column()
-  license_registration_no: string;
+  license_registration_no!: string;
 
   @Column()
-  qualification: string;
+  qualification!: string;
 
   @Column()
-  collage_name: string;
+  collage_name!: string;
 
   @Column()
-  course_year: number;
+  course_year!: number;
 
   @Column()
-  user_type_id: number;
+  user_type_id!: number;
 }
